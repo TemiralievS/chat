@@ -1,8 +1,12 @@
+import sys
+import logging
+import log.server_log_config
 from socket import *
 from vars.vars import *
 from funcJson.funcs import *
-import sys
 
+
+server_logger = logging.getLogger('server')
 
 def message_from_to_client(message):
     '''
@@ -10,6 +14,7 @@ def message_from_to_client(message):
     проверяет правильность структуры сообщения,
     возвращает ответ клиенту в виде словаря
     '''
+    server_logger.info(f'Клиент отправил сообщение {message}')
     if jim_action in message and message[jim_action] == jim_presence and jim_time in message and jim_user in message \
             and message[jim_user][jim_account_name] == 'user':
         return {jim_response: 200}
@@ -33,10 +38,10 @@ def main():
             raise ValueError
 
     except IndexError:
-        print('Not a port')
+        server_logger.error('Not a port')
         sys.exit(1)
     except ValueError:
-        print('The port must be in the range (1024:65535)')
+        server_logger.error('The port must be in the range (1024:65535)')
         sys.exit(1)
 
     try:
@@ -46,7 +51,7 @@ def main():
             address = ''
 
     except IndexError:
-        print(
+        server_logger.info(
             'После параметра \'a\'- укажите адрес, который будет слушать сервер.')
         sys.exit(1)
 
@@ -56,15 +61,15 @@ def main():
 
     while True:
         client, addr = s.accept()
-        print('получаем запрос на соединение:', addr)
+        server_logger.debug(f'получаем запрос на соединение:{addr}')
         try:
             client_message = get_message(client)
-            print(client_message)
+            server_logger.debug('обработка сообщения')
             check = message_from_to_client(client_message)
             send_message(client, check)
             client.close()
         except (ValueError, json.JSONDecodeError):
-            print('Структура сообщения не соответствует требованиям')
+            server_logger.error('Структура сообщения не соответствует требованиям')
             client.close()
 
 

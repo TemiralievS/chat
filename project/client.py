@@ -1,11 +1,14 @@
-from socket import *
 import sys
 import json
 import time
-
+import logging
+import log.client_log_config
+from socket import *
 from vars.vars import *
 from funcJson.funcs import *
 
+
+client_logger = logging.getLogger('client')
 
 def client_message_presence(account_name='user'):
     '''
@@ -19,6 +22,7 @@ def client_message_presence(account_name='user'):
         jim_time: time.time(),
         jim_user: {jim_account_name: account_name}
     }
+    client_logger.info(f'{jim_presence} сообщение от {account_name}')
     return message_dict
 
 
@@ -28,6 +32,7 @@ def server_message(answer):
     :param answer:
     :return:
     '''
+    client_logger.debug(f'Статус сообщения {answer}')
     if jim_response in answer:
         if answer[jim_response] == 200:
             return '200 — OK'
@@ -41,12 +46,13 @@ def main():
         server_address = sys.argv[1]
         server_port = int(sys.argv[2])
         if server_port < 1024 or server_port > 65535:
+            client_logger.error('Неверный адрес')
             raise ValueError
     except IndexError:
         server_address = '127.0.0.1'
         server_port = 7777
     except ValueError:
-        print('The port must be in the range (1024:65535)')
+        client_logger.error('The port must be in the range (1024:65535)')
         sys.exit(1)
 
     s = socket(AF_INET, SOCK_STREAM)
@@ -56,9 +62,9 @@ def main():
 
     try:
         server_answer = server_message(get_message(s))
-        print(server_answer)
+        client_logger.debug(server_answer)
     except (ValueError, json.JSONDecodeError):
-        print('Структура сообщения не соответствует требованиям')
+        client_logger.error('Структура сообщения не соответствует требованиям')
 
 
 if __name__ == '__main__':
