@@ -1,0 +1,13 @@
+2023-06-02 15:08:05,486 CRITICAL client_log_config.py Критическая ошибка
+2023-06-02 15:08:05,486 ERROR client_log_config.py Ошибка
+2023-06-02 15:08:05,486 DEBUG client_log_config.py Отладочная информация
+2023-06-02 15:08:05,486 INFO client_log_config.py Информационное сообщение
+2023-06-02 16:58:45,032 INFO client.py presence сообщение от user
+2023-06-02 16:58:45,033 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-02 16:58:45,033 DEBUG client.py 200 — OK
+2023-06-02 17:00:01,203 INFO client.py  сообщение от user
+2023-06-02 17:00:01,203 DEBUG client.py Статус сообщения {'response': 400, 'error': 'Bad request'}
+2023-06-02 17:00:01,203 DEBUG client.py 4xx — client ERROR
+2023-06-02 17:00:49,150 INFO client.py presence сообщение от user
+2023-06-02 17:00:49,150 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-02 17:00:49,150 DEBUG client.py 200 — OK
