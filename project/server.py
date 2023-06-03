@@ -8,6 +8,8 @@ from funcJson.funcs import *
 
 server_logger = logging.getLogger('server')
 
+
+@log
 def message_from_to_client(message):
     '''
     Функция принимает сообщение от клиента в виде словаря,
