@@ -10,6 +10,8 @@ from funcJson.funcs import *
 
 client_logger = logging.getLogger('client')
 
+
+@log
 def client_message_presence(account_name='user'):
     '''
     Функция формирует presence-сообщение со стороны клиента
@@ -26,6 +28,7 @@ def client_message_presence(account_name='user'):
     return message_dict
 
 
+@log
 def server_message(answer):
     '''
     Функция принимает ответ от сервера

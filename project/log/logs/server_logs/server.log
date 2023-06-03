@@ -11,3 +11,15 @@
 2023-06-02 17:00:49,150 DEBUG server.py получаем запрос на соединение:('127.0.0.1', 52798)
 2023-06-02 17:00:49,150 DEBUG server.py обработка сообщения
 2023-06-02 17:00:49,150 INFO server.py Клиент отправил сообщение {'action': 'presence', 'time': 1685714449.15041, 'user': {'account_name': 'user'}}
+2023-06-03 13:45:57,406 DEBUG server.py получаем запрос на соединение:('127.0.0.1', 38664)
+2023-06-03 13:45:57,406 DEBUG server.py получаем запрос на соединение:('127.0.0.1', 38664)
+2023-06-03 13:45:57,408 DEBUG decorator_log.py Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 6721), raddr=('127.0.0.1', 38664)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-03 13:45:57,408 DEBUG decorator_log.py Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 6721), raddr=('127.0.0.1', 38664)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-03 13:45:57,408 DEBUG server.py обработка сообщения
+2023-06-03 13:45:57,408 DEBUG server.py обработка сообщения
+2023-06-03 13:45:57,408 INFO server.py Клиент отправил сообщение {'action': 'presence', 'time': 1685789157.4065094, 'user': {'account_name': 'user'}}
+2023-06-03 13:45:57,408 INFO server.py Клиент отправил сообщение {'action': 'presence', 'time': 1685789157.4065094, 'user': {'account_name': 'user'}}
+2023-06-03 13:45:57,408 DEBUG decorator_log.py Была вызвана функция message_from_to_client c параметрами ({'action': 'presence', 'time': 1685789157.4065094, 'user': {'account_name': 'user'}},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-03 13:45:57,408 DEBUG decorator_log.py Была вызвана функция message_from_to_client c параметрами ({'action': 'presence', 'time': 1685789157.4065094, 'user': {'account_name': 'user'}},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-03 13:45:57,408 DEBUG decorator_log.py Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 6721), raddr=('127.0.0.1', 38664)>, {'response': 200}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-03 13:45:57,408 DEBUG decorator_log.py Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 6721), raddr=('127.0.0.1', 38664)>, {'response': 200}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main

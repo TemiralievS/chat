@@ -1,15 +1,18 @@
 import json
+import sys
+from project.log.decorator_log import log
 
 
-def get_message(sock):
+@log
+def get_message(client):
     '''
     Функция для приёма и декодирования сообщения в байтовом формате.
     Выдаёт словарь. если принятое сообщение не в байтовом формате, отдаёт ошибку значения
-    :param sock:
+    :param client:
     :return:
     '''
 
-    encoded_response = sock.recv(1024)
+    encoded_response = client.recv(1024)
     if isinstance(encoded_response, bytes):
         json_response = encoded_response.decode('utf-8')
         response = json.loads(json_response)
@@ -19,6 +22,7 @@ def get_message(sock):
     raise ValueError
 
 
+@log
 def send_message(sock, message):
     '''
     Функция кодирования и отправки сообщения
