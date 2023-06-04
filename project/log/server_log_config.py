@@ -6,7 +6,7 @@ import sys
 sys.path.append('../')
 
 
-SERVER_FORMATTER = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(message)s')
+SERVER_FORMATTER = logging.Formatter('%(asctime)s %(levelname)s %(name)s %(message)s')
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(f'{PATH}/logs/server_logs', 'server.log')
