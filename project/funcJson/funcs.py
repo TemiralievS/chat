@@ -1,7 +1,7 @@
 import json
 import sys
 from project.log.decorator_log import log
-
+from project.errs.errors import *
 
 @log
 def get_message(client):
@@ -18,9 +18,8 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-        raise ValueError
-    raise ValueError
-
+        raise IncorrectDataRecivedError
+    raise IncorrectDataRecivedError
 
 @log
 def send_message(sock, message):
@@ -31,7 +30,8 @@ def send_message(sock, message):
     :param message:
     :return:
     '''
-
+    if not isinstance(message, dict):
+        raise NonDictInputError
     js_message = json.dumps(message)
     encoded_message = js_message.encode('utf-8')
     sock.send(encoded_message)
