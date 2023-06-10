@@ -22,6 +22,6 @@ def log(log_func):
         logger.debug(f'Была вызвана функция {log_func.__name__} c параметрами {args}, {kwargs}. '
                      f'Вызов из модуля {log_func.__module__}. Вызов из'
                      f' функции {traceback.format_stack()[0].strip().split()[-1]}.'
-                     f'Вызов из функции {inspect.stack()[1][3]}')
+                     f'Вызов из функции {inspect.stack()[1][3]}', stacklevel=2)
         return logs
     return wrapper

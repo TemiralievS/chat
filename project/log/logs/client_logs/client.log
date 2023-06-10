@@ -1,14 +1,29 @@
-2023-06-04 18:19:56,588 INFO client presence сообщение от user
-2023-06-04 18:19:56,588 INFO client presence сообщение от user
-2023-06-04 18:19:56,590 DEBUG client Была вызвана функция client_message_presence c параметрами (), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,590 DEBUG client Была вызвана функция client_message_presence c параметрами (), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,592 DEBUG client Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42238), raddr=('127.0.0.1', 6731)>, {'action': 'presence', 'time': 1685891996.5881128, 'user': {'account_name': 'user'}}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,592 DEBUG client Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42238), raddr=('127.0.0.1', 6731)>, {'action': 'presence', 'time': 1685891996.5881128, 'user': {'account_name': 'user'}}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,592 DEBUG client Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42238), raddr=('127.0.0.1', 6731)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,592 DEBUG client Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 42238), raddr=('127.0.0.1', 6731)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,592 DEBUG client Статус сообщения {'response': 200}
-2023-06-04 18:19:56,592 DEBUG client Статус сообщения {'response': 200}
-2023-06-04 18:19:56,593 DEBUG client Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,593 DEBUG client Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
-2023-06-04 18:19:56,593 DEBUG client 200 — OK
-2023-06-04 18:19:56,593 DEBUG client 200 — OK
+
+2023-06-10 12:29:04,490 INFO client.py presence сообщение от user
+2023-06-10 12:29:04,490 INFO client.py presence сообщение от user
+2023-06-10 12:29:04,491 DEBUG client.py Была вызвана функция client_message_presence c параметрами (), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,491 DEBUG client.py Была вызвана функция client_message_presence c параметрами (), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,494 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45610), raddr=('127.0.0.1', 6731)>, {'action': 'presence', 'time': 1686389344.4899836, 'user': {'account_name': 'user'}}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,494 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45610), raddr=('127.0.0.1', 6731)>, {'action': 'presence', 'time': 1686389344.4899836, 'user': {'account_name': 'user'}}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,494 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45610), raddr=('127.0.0.1', 6731)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,494 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45610), raddr=('127.0.0.1', 6731)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,494 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-10 12:29:04,494 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-10 12:29:04,494 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,494 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:29:04,494 DEBUG client.py 200 — OK
+2023-06-10 12:29:04,494 DEBUG client.py 200 — OK
+2023-06-10 12:31:24,720 INFO client.py presence сообщение от user
+2023-06-10 12:31:24,720 INFO client.py presence сообщение от user
+2023-06-10 12:31:24,722 DEBUG client.py Была вызвана функция client_message_presence c параметрами (), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,722 DEBUG client.py Была вызвана функция client_message_presence c параметрами (), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,722 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45686), raddr=('127.0.0.1', 6731)>, {'action': 'presence', 'time': 1686389484.7204738, 'user': {'account_name': 'user'}}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,722 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45686), raddr=('127.0.0.1', 6731)>, {'action': 'presence', 'time': 1686389484.7204738, 'user': {'account_name': 'user'}}), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,723 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45686), raddr=('127.0.0.1', 6731)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,723 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 45686), raddr=('127.0.0.1', 6731)>,), {}. Вызов из модуля funcJson.funcs. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,723 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-10 12:31:24,723 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-10 12:31:24,723 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,723 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__. Вызов из функции main().Вызов из функции main
+2023-06-10 12:31:24,723 DEBUG client.py 200 — OK
+2023-06-10 12:31:24,723 DEBUG client.py 200 — OK
