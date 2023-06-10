@@ -9,9 +9,8 @@ from functools import wraps
 
 if sys.argv[0].find('client') == -1:
     logger = logging.getLogger('server')
-elif sys.argv[0].find('client') != -1:
+else:
     logger = logging.getLogger('client')
-
 
 
 def log(log_func):
