@@ -10,10 +10,9 @@ while True:
         break
     elif ACTION == 's':
         PROCESS.append(subprocess.Popen('python server.py', shell=True))
-        for i in range(2):
-            PROCESS.append(subprocess.Popen('python client.py -m send', shell=True))
-        for i in range(5):
-            PROCESS.append(subprocess.Popen('python client.py -m listen', shell=True))
+        PROCESS.append(subprocess.Popen('python server.py -n oleg', shell=True))
+        PROCESS.append(subprocess.Popen('python server.py -n dima', shell=True))
+
     elif ACTION == 'x':
         while PROCESS:
             VICTIM = PROCESS.pop()

@@ -3,6 +3,7 @@ import sys
 from project.log.decorator_log import log
 from project.errs.errors import *
 
+
 @log
 def get_message(client):
     '''
@@ -18,8 +19,11 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
+        else:
+            raise IncorrectDataRecivedError
+    else:
         raise IncorrectDataRecivedError
-    raise IncorrectDataRecivedError
+
 
 @log
 def send_message(sock, message):
