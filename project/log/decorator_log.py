@@ -1,7 +1,5 @@
 import sys
 import logging
-import project.log.client_log_config
-import project.log.server_log_config
 from functools import wraps
 
 
