@@ -5,12 +5,14 @@ import argparse
 import select
 import time
 import json
+import threading
 import log.server_log_config
 from log.decorator_log import *
 from vars.vars import *
 from funcJson.funcs import *
 from meta import ServerCheck
 from dscriptors import Port
+from server_db import ServerStorage
 
 
 server_logger = logging.getLogger('server')
@@ -27,15 +29,20 @@ def arguments_parser():
     return listen_address, listen_port
 
 
-class Server(metaclass=ServerCheck):
+class Server(threading.Thread, metaclass=ServerCheck):
     port = Port()
 
-    def __init__(self, listen_address, listen_port):
+    def __init__(self, listen_address, listen_port, database):
         self.addr = listen_address
         self.port = listen_port
+
+        self.database = database
+
         self.clients_lst = []
         self.messages_list = []
         self.names_dct = dict()
+
+        super().__init__()
 
 
     def init_socket(self):
@@ -47,7 +54,7 @@ class Server(metaclass=ServerCheck):
         self.sock.listen()
 
 
-    def main_alg(self):
+    def run(self):
         self.init_socket()
         while True:
             try:
@@ -104,6 +111,8 @@ class Server(metaclass=ServerCheck):
                 and jim_user in message:
             if message[jim_user][jim_account_name] not in self.names_dct.keys():
                 self.names_dct[message[jim_user][jim_account_name]] = client
+                client_ip, client_port = client.getpeername()
+                self.database.user_login(message[jim_user][jim_account_name], client_ip, client_port)
                 send_message(client, {jim_response: 200})
             else:
                 response = {jim_response: 400, jim_error: 'Пользователь с таким именем существует'}
@@ -120,6 +129,7 @@ class Server(metaclass=ServerCheck):
 
         elif jim_action in message and message[jim_action] == jim_exit and \
                 jim_account_name in message:
+            self.database.user_logout(message[jim_account_name])
             self.clients_lst.remove(self.names_dct[jim_account_name])
             self.names_dct[jim_account_name].close()
             del self.names_dct[jim_account_name]
@@ -131,10 +141,43 @@ class Server(metaclass=ServerCheck):
             return
 
 
+def print_help():
+    print('Поддерживаемые комманды:')
+    print('users - список известных пользователей')
+    print('connected - список подключенных пользователей')
+    print('loghist - история входов пользователя')
+    print('exit - завершение работы сервера.')
+    print('help - вывод справки по поддерживаемым командам')
+
+
 def main():
     listen_address, listen_port = arguments_parser()
-    server = Server(listen_address, listen_port)
-    server.main_alg()
+
+    database = ServerStorage()
+
+    server = Server(listen_address, listen_port, database)
+    server.daemon = True
+    server.start()
+    print_help()
+
+    while True:
+        command = input('Введите комманду: ')
+        if command == 'help':
+            print_help()
+        elif command == 'exit':
+            break
+        elif command == 'users':
+            for user in sorted(database.users_list()):
+                print(f'Пользователь {user[0]}, последний вход: {user[1]}')
+        elif command == 'connected':
+            for user in sorted(database.active_users_list()):
+                print(f'Пользователь {user[0]}, подключен: {user[1]}:{user[2]}, время установки соединения: {user[3]}')
+        elif command == 'loghist':
+            name = input('Введите имя пользователя для просмотра истории. Для вывода всей истории, просто нажмите Enter: ')
+            for user in sorted(database.login_history(name)):
+                print(f'Пользователь: {user[0]} время входа: {user[1]}. Вход с: {user[2]}:{user[3]}')
+        else:
+            print('Команда не распознана.')
 
     
 if __name__ == '__main__':

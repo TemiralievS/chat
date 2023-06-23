@@ -1,5 +1,10 @@
 import logging
-logger = logging.getLogger('server')
+import sys
+
+if sys.argv[0].find('client') == -1:
+    logger = logging.getLogger('server')
+else:
+    logger = logging.getLogger('client')
 
 
 class Port:
