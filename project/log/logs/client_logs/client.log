@@ -264,3 +264,601 @@
 2023-06-23 16:46:38,135 INFO client.py Пользователь покинул чат
 2023-06-23 16:46:43,031 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 50418), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687528003.0311947, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
 2023-06-23 16:46:43,031 INFO client.py Пользователь покинул чат
+2023-06-23 17:36:26,136 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 17:36:26,136 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 17:36:26,143 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 17:36:26,143 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 17:36:26,649 INFO client.py presence сообщение от test2
+2023-06-23 17:36:26,649 INFO client.py presence сообщение от test1
+2023-06-23 17:36:26,649 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 17:36:26,649 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 17:36:26,649 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 50963), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687530986.649209, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 17:36:26,649 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=396, family=2, type=1, proto=0, laddr=('127.0.0.1', 50962), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687530986.649209, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 17:36:26,666 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 50963), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 17:36:26,666 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 17:36:26,666 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 17:36:26,666 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 17:36:26,667 DEBUG client.py Запущено
+2023-06-23 17:36:26,672 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=396, family=2, type=1, proto=0, laddr=('127.0.0.1', 50962), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 17:36:26,672 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 17:36:26,673 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 17:36:26,673 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 17:36:26,673 DEBUG client.py Запущено
+2023-06-23 17:36:37,238 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 50963), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687530997.2383177, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 17:36:37,238 INFO client.py Пользователь покинул чат
+2023-06-23 17:36:41,822 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=396, family=2, type=1, proto=0, laddr=('127.0.0.1', 50962), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687531001.8224163, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 17:36:41,822 INFO client.py Пользователь покинул чат
+2023-06-23 20:25:47,568 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:25:47,568 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 20:25:47,568 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:25:47,568 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 20:25:49,610 CRITICAL client.py Отсутствует разрешение на присоединение
+2023-06-23 20:25:49,610 CRITICAL client.py Отсутствует разрешение на присоединение
+2023-06-23 20:28:07,352 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:28:07,352 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 20:28:07,355 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:28:07,355 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 20:28:09,391 CRITICAL client.py Отсутствует разрешение на присоединение
+2023-06-23 20:28:44,648 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:28:44,648 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 20:28:44,650 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:28:44,650 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 20:28:46,687 CRITICAL client.py Отсутствует разрешение на присоединение
+2023-06-23 20:58:20,320 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:58:20,320 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 20:58:20,320 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 20:58:20,320 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 20:58:20,834 INFO client.py presence сообщение от test2
+2023-06-23 20:58:20,834 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 20:58:20,834 INFO client.py presence сообщение от test1
+2023-06-23 20:58:20,835 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=392, family=2, type=1, proto=0, laddr=('127.0.0.1', 52156), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687543100.8343694, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 20:58:20,836 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=344, family=2, type=1, proto=0, laddr=('127.0.0.1', 52157), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687543100.8343694, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 20:58:20,852 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=392, family=2, type=1, proto=0, laddr=('127.0.0.1', 52156), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 20:58:20,852 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 20:58:20,852 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 20:58:20,852 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 20:58:20,853 DEBUG client.py Запущено
+2023-06-23 20:58:20,858 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=344, family=2, type=1, proto=0, laddr=('127.0.0.1', 52157), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 20:58:20,858 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 20:58:20,858 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 20:58:20,858 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 20:58:20,859 DEBUG client.py Запущено
+2023-06-23 20:58:51,195 DEBUG client.py Сообщение {'action': 'message', 'from': 'test1', 'to': 'test1', 'time': 1687543131.1956758, 'mess_text': '12'}
+2023-06-23 20:58:51,196 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=344, family=2, type=1, proto=0, laddr=('127.0.0.1', 52157), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test1', 'time': 1687543131.1956758, 'mess_text': '12'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 20:58:51,196 INFO client.py Пользователь test1 скоро получит ваше сообщение
+2023-06-23 20:59:08,241 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 20:59:08,241 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 21:41:03,701 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 21:41:12,445 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: 12
+2023-06-23 21:41:14,461 CRITICAL client.py Отсутствует разрешение на присоединение
+2023-06-23 22:25:38,256 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:25:38,256 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:25:38,256 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:25:38,758 INFO client.py presence сообщение от test2
+2023-06-23 22:25:38,758 INFO client.py presence сообщение от test1
+2023-06-23 22:25:38,759 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:25:38,759 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:25:38,759 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=392, family=2, type=1, proto=0, laddr=('127.0.0.1', 52756), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548338.7585597, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:25:38,759 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52755), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548338.7585597, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:25:38,775 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52755), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:25:38,775 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:25:38,776 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:25:38,776 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:25:38,782 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=392, family=2, type=1, proto=0, laddr=('127.0.0.1', 52756), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:25:38,782 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:25:38,782 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:25:38,782 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:26:23,833 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:26:27,041 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: oleg
+2023-06-23 22:28:15,413 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:28:15,414 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:28:15,918 INFO client.py presence сообщение от test2
+2023-06-23 22:28:15,919 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:28:15,919 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:28:15,919 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=512, family=2, type=1, proto=0, laddr=('127.0.0.1', 52788), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548495.9185286, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:15,919 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52789), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548495.9185286, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:15,934 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=512, family=2, type=1, proto=0, laddr=('127.0.0.1', 52788), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:15,934 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:28:15,934 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:28:15,935 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:28:15,941 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52789), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:15,941 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:28:15,941 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:28:15,941 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:28:15,969 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:28:15,969 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=512, family=2, type=1, proto=0, laddr=('127.0.0.1', 52788), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548495.96987, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:15,973 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:28:15,973 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52789), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548495.9738276, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:16,451 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=512, family=2, type=1, proto=0, laddr=('127.0.0.1', 52788), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:16,451 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52789), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:16,465 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:28:16,465 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548496.465358, 'user': 'test1'}
+2023-06-23 22:28:16,465 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=512, family=2, type=1, proto=0, laddr=('127.0.0.1', 52788), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548496.465358, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:16,466 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:28:16,466 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548496.4663546, 'user': 'test2'}
+2023-06-23 22:28:16,466 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52789), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548496.4663546, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:16,967 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=512, family=2, type=1, proto=0, laddr=('127.0.0.1', 52788), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:16,968 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:28:16,968 DEBUG client.py Запущено
+2023-06-23 22:28:16,968 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52789), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:16,969 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:28:16,969 DEBUG client.py Запущено
+2023-06-23 22:28:18,982 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:28:18,982 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:28:33,358 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:28:33,358 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:28:33,361 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:28:33,361 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:28:33,863 INFO client.py presence сообщение от test1
+2023-06-23 22:28:33,864 INFO client.py presence сообщение от test2
+2023-06-23 22:28:33,864 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:28:33,864 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:28:33,865 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52791), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548513.8638518, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:33,865 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52790), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548513.8638518, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:33,881 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52790), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:33,881 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:28:33,881 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:28:33,881 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:28:33,888 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52791), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:33,888 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:28:33,888 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:28:33,888 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:28:33,895 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:28:33,895 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52790), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548513.8957298, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:33,902 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:28:33,903 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52791), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548513.9024622, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:34,398 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52790), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:34,400 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52791), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:34,413 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:28:34,413 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548514.4131293, 'user': 'test2'}
+2023-06-23 22:28:34,413 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52791), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548514.4131293, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:34,414 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:28:34,414 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548514.414125, 'user': 'test1'}
+2023-06-23 22:28:34,414 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52790), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548514.414125, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:34,909 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52790), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:34,909 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:28:34,910 DEBUG client.py Запущено
+2023-06-23 22:28:34,910 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52791), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:34,910 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:28:34,911 DEBUG client.py Запущено
+2023-06-23 22:28:36,916 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:28:36,916 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:28:46,466 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:28:46,467 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:28:46,470 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:28:46,470 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:28:46,978 INFO client.py presence сообщение от test2
+2023-06-23 22:28:46,978 INFO client.py presence сообщение от test1
+2023-06-23 22:28:46,978 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:28:46,979 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:28:46,979 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=524, family=2, type=1, proto=0, laddr=('127.0.0.1', 52792), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548526.978134, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:46,979 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52793), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548526.978134, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:46,998 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52793), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:46,999 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:28:46,999 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:28:46,999 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:28:47,005 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=524, family=2, type=1, proto=0, laddr=('127.0.0.1', 52792), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:47,005 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:28:47,005 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:28:47,005 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:28:47,012 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:28:47,012 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52793), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548527.012087, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:47,018 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:28:47,018 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=524, family=2, type=1, proto=0, laddr=('127.0.0.1', 52792), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548527.0189648, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:47,511 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52793), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:47,513 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=524, family=2, type=1, proto=0, laddr=('127.0.0.1', 52792), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:47,526 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:28:47,526 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548527.5266378, 'user': 'test1'}
+2023-06-23 22:28:47,526 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=524, family=2, type=1, proto=0, laddr=('127.0.0.1', 52792), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548527.5266378, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:47,526 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:28:47,527 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548527.5276344, 'user': 'test2'}
+2023-06-23 22:28:47,527 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52793), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548527.5276344, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:48,028 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=476, family=2, type=1, proto=0, laddr=('127.0.0.1', 52793), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:48,028 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:28:48,028 DEBUG client.py Запущено
+2023-06-23 22:28:48,028 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=524, family=2, type=1, proto=0, laddr=('127.0.0.1', 52792), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:28:48,029 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:28:48,029 DEBUG client.py Запущено
+2023-06-23 22:28:50,037 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:28:50,037 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:29:10,938 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:29:10,938 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:29:10,944 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:29:10,944 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:29:11,442 INFO client.py presence сообщение от test1
+2023-06-23 22:29:11,442 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:29:11,443 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52794), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548551.4421377, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:11,458 INFO client.py presence сообщение от test2
+2023-06-23 22:29:11,458 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:29:11,458 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=592, family=2, type=1, proto=0, laddr=('127.0.0.1', 52795), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548551.458087, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:11,470 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52794), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:11,470 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:29:11,470 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:29:11,471 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:29:11,485 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:29:11,485 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52794), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548551.4850667, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:11,977 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52794), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:11,991 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=592, family=2, type=1, proto=0, laddr=('127.0.0.1', 52795), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:11,991 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:29:11,991 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:29:11,991 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:29:11,992 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:29:11,992 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548551.992812, 'user': 'test1'}
+2023-06-23 22:29:11,992 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52794), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548551.992812, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:12,006 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:29:12,006 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=592, family=2, type=1, proto=0, laddr=('127.0.0.1', 52795), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548552.0066833, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:12,493 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=388, family=2, type=1, proto=0, laddr=('127.0.0.1', 52794), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:12,494 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:29:12,494 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=592, family=2, type=1, proto=0, laddr=('127.0.0.1', 52795), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:12,494 DEBUG client.py Запущено
+2023-06-23 22:29:12,504 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:29:12,504 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548552.504123, 'user': 'test2'}
+2023-06-23 22:29:12,504 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=592, family=2, type=1, proto=0, laddr=('127.0.0.1', 52795), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548552.504123, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:13,001 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=592, family=2, type=1, proto=0, laddr=('127.0.0.1', 52795), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:13,001 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:29:13,002 DEBUG client.py Запущено
+2023-06-23 22:29:14,496 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:29:15,017 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:29:46,884 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:29:46,884 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:29:46,885 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:29:46,885 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:29:47,399 INFO client.py presence сообщение от test1
+2023-06-23 22:29:47,400 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:29:47,400 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:29:47,400 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=596, family=2, type=1, proto=0, laddr=('127.0.0.1', 52797), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548587.3997416, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:47,401 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=420, family=2, type=1, proto=0, laddr=('127.0.0.1', 52796), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548587.3997416, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:47,416 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=596, family=2, type=1, proto=0, laddr=('127.0.0.1', 52797), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:47,416 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:29:47,417 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:29:47,417 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:29:47,430 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:29:47,430 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=596, family=2, type=1, proto=0, laddr=('127.0.0.1', 52797), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548587.4306774, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:47,951 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=420, family=2, type=1, proto=0, laddr=('127.0.0.1', 52796), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:47,951 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:29:47,951 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:29:47,951 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:29:47,952 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=596, family=2, type=1, proto=0, laddr=('127.0.0.1', 52797), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:47,958 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:29:47,958 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548587.9589028, 'user': 'test2'}
+2023-06-23 22:29:47,958 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=596, family=2, type=1, proto=0, laddr=('127.0.0.1', 52797), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548587.9589028, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:47,967 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:29:47,967 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=420, family=2, type=1, proto=0, laddr=('127.0.0.1', 52796), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548587.967408, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:48,461 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=420, family=2, type=1, proto=0, laddr=('127.0.0.1', 52796), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:48,462 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=596, family=2, type=1, proto=0, laddr=('127.0.0.1', 52797), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:48,462 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:29:48,463 DEBUG client.py Запущено
+2023-06-23 22:29:48,470 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:29:48,470 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548588.470114, 'user': 'test1'}
+2023-06-23 22:29:48,471 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=420, family=2, type=1, proto=0, laddr=('127.0.0.1', 52796), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548588.470114, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:48,973 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=420, family=2, type=1, proto=0, laddr=('127.0.0.1', 52796), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:29:48,973 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:29:48,974 DEBUG client.py Запущено
+2023-06-23 22:29:50,467 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:29:50,975 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:30:54,164 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:30:54,164 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:30:54,168 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:30:54,169 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:30:54,677 INFO client.py presence сообщение от test1
+2023-06-23 22:30:54,677 INFO client.py presence сообщение от test2
+2023-06-23 22:30:54,677 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:30:54,678 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:30:54,678 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52806), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548654.6776912, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:54,678 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52805), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687548654.6776912, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:54,690 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52806), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:54,690 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:30:54,690 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:30:54,690 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:30:54,697 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52805), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:54,697 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:30:54,697 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:30:54,697 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:30:54,704 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:30:54,704 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52806), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548654.7045968, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:54,711 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:30:54,711 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52805), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687548654.7113123, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:55,207 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52806), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:55,209 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52805), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:55,222 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:30:55,222 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548655.2225, 'user': 'test2'}
+2023-06-23 22:30:55,222 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52805), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548655.2225, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:55,223 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:30:55,223 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687548655.2234967, 'user': 'test1'}
+2023-06-23 22:30:55,223 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52806), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687548655.2234967, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:55,727 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52806), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:55,728 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:30:55,728 DEBUG client.py Запущено
+2023-06-23 22:30:55,728 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52805), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:30:55,729 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:30:55,729 DEBUG client.py Запущено
+2023-06-23 22:30:57,737 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:30:57,737 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:37:56,219 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:37:56,219 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:37:56,219 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:37:56,219 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:37:56,730 INFO client.py presence сообщение от test1
+2023-06-23 22:37:56,730 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:37:56,731 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=564, family=2, type=1, proto=0, laddr=('127.0.0.1', 52844), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549076.7302825, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:56,744 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=564, family=2, type=1, proto=0, laddr=('127.0.0.1', 52844), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:56,744 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:37:56,744 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:37:56,744 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:37:56,746 INFO client.py presence сообщение от test2
+2023-06-23 22:37:56,746 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:37:56,746 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=380, family=2, type=1, proto=0, laddr=('127.0.0.1', 52843), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549076.7462342, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:56,757 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:37:56,757 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=564, family=2, type=1, proto=0, laddr=('127.0.0.1', 52844), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687549076.757853, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:57,259 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=564, family=2, type=1, proto=0, laddr=('127.0.0.1', 52844), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:57,267 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:37:57,267 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687549077.2671092, 'user': 'test1'}
+2023-06-23 22:37:57,267 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=564, family=2, type=1, proto=0, laddr=('127.0.0.1', 52844), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687549077.2671092, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:57,268 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=380, family=2, type=1, proto=0, laddr=('127.0.0.1', 52843), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:57,268 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:37:57,268 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:37:57,268 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:37:57,283 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:37:57,283 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=380, family=2, type=1, proto=0, laddr=('127.0.0.1', 52843), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687549077.283039, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:57,778 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=564, family=2, type=1, proto=0, laddr=('127.0.0.1', 52844), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:57,778 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:37:57,779 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=380, family=2, type=1, proto=0, laddr=('127.0.0.1', 52843), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:57,779 DEBUG client.py Запущено
+2023-06-23 22:37:57,792 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:37:57,792 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687549077.7927155, 'user': 'test2'}
+2023-06-23 22:37:57,792 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=380, family=2, type=1, proto=0, laddr=('127.0.0.1', 52843), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687549077.7927155, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:58,297 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=380, family=2, type=1, proto=0, laddr=('127.0.0.1', 52843), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:37:58,297 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:37:58,298 DEBUG client.py Запущено
+2023-06-23 22:38:21,162 DEBUG client.py Сообщение {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687549101.1621444, 'mess_text': 'Привет. Проверка'}
+2023-06-23 22:38:21,173 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=380, family=2, type=1, proto=0, laddr=('127.0.0.1', 52843), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687549101.1621444, 'mess_text': 'Привет. Проверка'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:38:21,173 INFO client.py Пользователь test1 скоро получит ваше сообщение
+2023-06-23 22:41:04,406 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:41:04,406 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:41:42,392 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:41:42,392 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:41:42,393 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:41:42,393 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:41:42,895 INFO client.py presence сообщение от test1
+2023-06-23 22:41:42,895 INFO client.py presence сообщение от test2
+2023-06-23 22:41:42,896 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:41:42,896 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:41:42,896 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549302.8956146, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:42,896 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549302.8956146, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:42,916 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:42,916 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:41:42,917 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:41:42,917 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:41:42,928 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:42,929 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:41:42,929 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:41:42,929 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:41:42,947 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:41:42,947 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687549302.9474897, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:42,959 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:41:42,959 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687549302.9590797, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:43,444 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:43,444 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:43,457 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:41:43,457 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687549303.4574654, 'user': 'test2'}
+2023-06-23 22:41:43,457 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687549303.4574654, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:43,457 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:41:43,457 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687549303.4574654, 'user': 'test1'}
+2023-06-23 22:41:43,458 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687549303.4574654, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:43,959 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:43,959 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:41:43,960 DEBUG client.py Запущено
+2023-06-23 22:41:43,960 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:41:43,960 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:41:43,961 DEBUG client.py Запущено
+2023-06-23 22:42:17,554 DEBUG client.py Сообщение {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1687549337.5540316, 'mess_text': 'Привет'}
+2023-06-23 22:42:18,087 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1687549337.5540316, 'mess_text': 'Привет'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:42:18,088 INFO client.py Пользователь test2 скоро получит ваше сообщение
+2023-06-23 22:42:19,088 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:42:19,103 INFO client.py Входящее сообщение от test1: Привет
+2023-06-23 22:42:39,697 DEBUG client.py Сообщение {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687549359.697992, 'mess_text': 'И тебе привет'}
+2023-06-23 22:42:39,710 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687549359.697992, 'mess_text': 'И тебе привет'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:42:39,710 INFO client.py Пользователь test1 скоро получит ваше сообщение
+2023-06-23 22:42:40,091 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:42:40,099 INFO client.py Входящее сообщение от test2: И тебе привет
+2023-06-23 22:43:16,025 DEBUG client.py Сообщение {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687549396.0250714, 'mess_text': 'Чего хотел'}
+2023-06-23 22:43:16,035 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687549396.0250714, 'mess_text': 'Чего хотел'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:43:16,035 INFO client.py Пользователь test1 скоро получит ваше сообщение
+2023-06-23 22:43:17,269 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:43:17,285 INFO client.py Входящее сообщение от test2: Чего хотел
+2023-06-23 22:43:41,505 DEBUG client.py Сообщение {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1687549421.5054495, 'mess_text': 'Просто проверяю связь'}
+2023-06-23 22:43:41,511 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1687549421.5054495, 'mess_text': 'Просто проверяю связь'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:43:41,511 INFO client.py Пользователь test2 скоро получит ваше сообщение
+2023-06-23 22:43:42,467 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:43:42,485 INFO client.py Входящее сообщение от test1: Просто проверяю связь
+2023-06-23 22:43:49,401 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=432, family=2, type=1, proto=0, laddr=('127.0.0.1', 52889), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687549429.4019458, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:43:49,403 INFO client.py Пользователь покинул чат
+2023-06-23 22:43:58,600 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=536, family=2, type=1, proto=0, laddr=('127.0.0.1', 52890), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687549438.6001515, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:43:58,600 INFO client.py Пользователь покинул чат
+2023-06-23 22:44:35,980 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:44:35,981 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:44:35,981 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:44:35,982 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:44:36,496 INFO client.py presence сообщение от test2
+2023-06-23 22:44:36,497 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:44:36,497 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=572, family=2, type=1, proto=0, laddr=('127.0.0.1', 52898), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549476.4968443, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:36,512 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=572, family=2, type=1, proto=0, laddr=('127.0.0.1', 52898), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:36,512 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:44:36,512 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:44:36,512 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:44:36,518 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52899), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:36,518 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:44:36,518 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:44:36,519 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:44:36,527 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:44:36,527 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=572, family=2, type=1, proto=0, laddr=('127.0.0.1', 52898), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687549476.5277739, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:36,533 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:44:36,533 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52899), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687549476.533938, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:37,029 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=572, family=2, type=1, proto=0, laddr=('127.0.0.1', 52898), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:37,030 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52899), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:37,044 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:44:37,044 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687549477.0449638, 'user': 'test2'}
+2023-06-23 22:44:37,044 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=572, family=2, type=1, proto=0, laddr=('127.0.0.1', 52898), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687549477.0449638, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:37,044 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:44:37,045 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687549477.045959, 'user': 'test1'}
+2023-06-23 22:44:37,045 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52899), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687549477.045959, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:37,536 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=572, family=2, type=1, proto=0, laddr=('127.0.0.1', 52898), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:37,536 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:44:37,537 DEBUG client.py Запущено
+2023-06-23 22:44:37,537 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=416, family=2, type=1, proto=0, laddr=('127.0.0.1', 52899), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:37,537 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:44:37,538 DEBUG client.py Запущено
+2023-06-23 22:44:43,671 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=572, family=2, type=1, proto=0, laddr=('127.0.0.1', 52898), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687549483.6717079, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:44:43,671 INFO client.py Пользователь покинул чат
+2023-06-23 22:52:54,754 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:52:54,754 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:52:54,754 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:52:54,754 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:52:54,755 INFO client.py presence сообщение от test1
+2023-06-23 22:52:54,755 INFO client.py presence сообщение от test2
+2023-06-23 22:52:54,755 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:52:54,755 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:52:54,755 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=400, family=2, type=1, proto=0, laddr=('127.0.0.1', 52942), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549974.7558753, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:52:54,755 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=608, family=2, type=1, proto=0, laddr=('127.0.0.1', 52943), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549974.7558753, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:53:17,053 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:53:17,053 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:53:17,054 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:53:17,054 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:53:17,054 INFO client.py presence сообщение от test1
+2023-06-23 22:53:17,054 INFO client.py presence сообщение от test2
+2023-06-23 22:53:17,054 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:53:17,054 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:53:17,055 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=404, family=2, type=1, proto=0, laddr=('127.0.0.1', 52945), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549997.0547717, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:53:17,055 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=472, family=2, type=1, proto=0, laddr=('127.0.0.1', 52944), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687549997.0547717, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:54:05,564 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:55:19,779 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:55:19,779 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:55:19,780 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:55:19,781 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:55:20,283 INFO client.py presence сообщение от test2
+2023-06-23 22:55:20,283 INFO client.py presence сообщение от test1
+2023-06-23 22:55:20,284 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:55:20,284 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:55:20,284 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687550120.2839475, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,285 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687550120.2839475, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,305 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,305 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:55:20,305 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:55:20,306 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:55:20,319 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,319 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:55:20,319 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:55:20,319 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:55:20,336 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:55:20,336 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687550120.336531, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,349 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:55:20,349 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687550120.3494384, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,824 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,825 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,832 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:55:20,832 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687550120.83248, 'user': 'test2'}
+2023-06-23 22:55:20,832 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687550120.83248, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:20,834 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:55:20,834 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687550120.8344736, 'user': 'test1'}
+2023-06-23 22:55:20,834 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687550120.8344736, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:21,330 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:21,330 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:55:21,331 DEBUG client.py Запущено
+2023-06-23 22:55:21,331 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:21,331 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:55:21,332 DEBUG client.py Запущено
+2023-06-23 22:55:47,393 DEBUG client.py Сообщение {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1687550147.3937893, 'mess_text': 'Привет еще раз'}
+2023-06-23 22:55:47,408 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1687550147.3937893, 'mess_text': 'Привет еще раз'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:47,408 INFO client.py Пользователь test2 скоро получит ваше сообщение
+2023-06-23 22:55:48,406 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:55:48,415 INFO client.py Входящее сообщение от test1: Привет еще раз
+2023-06-23 22:56:06,994 DEBUG client.py Сообщение {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687550166.994168, 'mess_text': 'снова проверка'}
+2023-06-23 22:56:07,007 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1687550166.994168, 'mess_text': 'снова проверка'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:07,007 INFO client.py Пользователь test1 скоро получит ваше сообщение
+2023-06-23 22:56:07,072 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:07,077 INFO client.py Входящее сообщение от test2: снова проверка
+2023-06-23 22:56:19,591 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=328, family=2, type=1, proto=0, laddr=('127.0.0.1', 52987), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687550179.5916445, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:19,592 INFO client.py Пользователь покинул чат
+2023-06-23 22:56:20,127 CRITICAL client.py Потеряно соединение с сервером.
+2023-06-23 22:56:29,095 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=152, family=2, type=1, proto=0, laddr=('127.0.0.1', 52986), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687550189.0955112, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:29,095 INFO client.py Пользователь покинул чат
+2023-06-23 22:56:29,557 CRITICAL client.py Потеряно соединение с сервером.
+2023-06-23 22:56:46,721 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:56:46,721 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:56:46,722 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:56:46,722 INFO client.py presence сообщение от test1
+2023-06-23 22:56:46,722 INFO client.py presence сообщение от test2
+2023-06-23 22:56:46,722 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:56:46,722 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:56:46,722 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52990), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687550206.7225292, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:46,722 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 52991), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687550206.7225292, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:46,729 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52990), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:46,729 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:56:46,729 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:56:46,729 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:56:46,736 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 52991), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:46,736 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:56:46,736 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:56:46,736 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:56:46,744 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:56:46,744 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52990), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687550206.744456, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:46,750 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:56:46,750 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 52991), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687550206.7504358, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:47,244 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52990), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:47,246 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 52991), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:47,262 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:56:47,262 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687550207.2623646, 'user': 'test2'}
+2023-06-23 22:56:47,262 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 52991), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687550207.2623646, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:47,263 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:56:47,263 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687550207.2633605, 'user': 'test1'}
+2023-06-23 22:56:47,263 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52990), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687550207.2633605, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:47,753 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=548, family=2, type=1, proto=0, laddr=('127.0.0.1', 52990), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:47,753 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:56:47,754 DEBUG client.py Запущено
+2023-06-23 22:56:47,754 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=384, family=2, type=1, proto=0, laddr=('127.0.0.1', 52991), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:56:47,754 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:56:47,755 DEBUG client.py Запущено
+2023-06-23 22:57:22,913 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:57:22,913 CRITICAL client.py Разорвано соединение с сервером
+2023-06-23 22:57:37,335 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:57:37,335 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1
+2023-06-23 22:57:37,339 DEBUG client.py Была вызвана функция arguments_parser c параметрами (), {}. Вызов из модуля __main__.
+2023-06-23 22:57:37,339 INFO client.py Запущен клиент с парамeтpами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2
+2023-06-23 22:57:37,848 INFO client.py presence сообщение от test1
+2023-06-23 22:57:37,848 INFO client.py presence сообщение от test2
+2023-06-23 22:57:37,848 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test1',), {}. Вызов из модуля __main__.
+2023-06-23 22:57:37,849 DEBUG client.py Была вызвана функция client_message_presence c параметрами ('test2',), {}. Вызов из модуля __main__.
+2023-06-23 22:57:37,849 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 52995), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687550257.8480146, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:37,849 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52996), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1687550257.8480146, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:37,864 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 52995), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:37,864 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:57:37,864 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:57:37,864 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:57:37,871 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52996), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:37,871 DEBUG client.py Статус сообщения {'response': 200}
+2023-06-23 22:57:37,871 DEBUG client.py Была вызвана функция server_message c параметрами ({'response': 200},), {}. Вызов из модуля __main__.
+2023-06-23 22:57:37,871 INFO client.py Соединение с сервером. Ответ сервера: 200 : OK
+2023-06-23 22:57:37,878 DEBUG client.py Запрос списка известных пользователей test1
+2023-06-23 22:57:37,878 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 52995), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687550257.8789506, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:37,885 DEBUG client.py Запрос списка известных пользователей test2
+2023-06-23 22:57:37,885 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52996), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1687550257.8852417, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:38,391 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 52995), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:38,391 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52996), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:38,406 DEBUG client.py Запрос контакт листа для пользователся test2
+2023-06-23 22:57:38,406 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687550258.4068425, 'user': 'test2'}
+2023-06-23 22:57:38,407 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52996), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687550258.4068425, 'user': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:38,407 DEBUG client.py Запрос контакт листа для пользователся test1
+2023-06-23 22:57:38,407 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1687550258.407798, 'user': 'test1'}
+2023-06-23 22:57:38,408 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 52995), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1687550258.407798, 'user': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:38,899 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 52995), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:38,899 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:57:38,899 DEBUG client.py Запущено
+2023-06-23 22:57:38,900 DEBUG client.py Была вызвана функция get_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52996), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:57:38,900 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2023-06-23 22:57:38,900 DEBUG client.py Запущено
+2023-06-23 22:58:11,045 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 52995), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687550291.0456908, 'account_name': 'test1'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:58:11,046 INFO client.py Пользователь покинул чат
+2023-06-23 22:58:12,046 CRITICAL client.py Потеряно соединение с сервером.
+2023-06-23 22:58:19,095 DEBUG client.py Была вызвана функция send_message c параметрами (<socket.socket fd=452, family=2, type=1, proto=0, laddr=('127.0.0.1', 52996), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1687550299.095186, 'account_name': 'test2'}), {}. Вызов из модуля funcJson.funcs.
+2023-06-23 22:58:19,095 INFO client.py Пользователь покинул чат
+2023-06-23 22:58:20,095 CRITICAL client.py Потеряно соединение с сервером.
