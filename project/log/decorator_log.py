@@ -1,6 +1,7 @@
 import sys
+import log.client_log_config
+import log.server_log_config
 import logging
-from functools import wraps
 
 
 if sys.argv[0].find('client') == -1:
@@ -9,11 +10,9 @@ else:
     logger = logging.getLogger('client')
 
 
-def log(log_func):
-    @wraps(log_func)
-    def wrapper(*args, **kwargs):
-        logs = log_func(*args, **kwargs)
-        logger.debug(f'Была вызвана функция {log_func.__name__} c параметрами {args}, {kwargs}. '
-                     f'Вызов из модуля {log_func.__module__}.', stacklevel=2)
-        return logs
-    return wrapper
+def log(func_to_log):
+    def log_saver(*args , **kwargs):
+        logger.debug(f'Была вызвана функция {func_to_log.__name__} c параметрами {args} , {kwargs}. Вызов из модуля {func_to_log.__module__}')
+        ret = func_to_log(*args , **kwargs)
+        return ret
+    return log_saver
