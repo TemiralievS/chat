@@ -57,7 +57,7 @@ if __name__ == '__main__':
     except ServerError as error:
         print(error.text)
         exit(1)
-    transport.setDaemon(True)
+    transport.daemon = True
     transport.start()
 
     main_window = ClientMainWindow(database, transport)
