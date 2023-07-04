@@ -5,7 +5,6 @@ from sqlalchemy.orm import mapper, sessionmaker
 import os
 
 
-
 class ClientDatabase:
     '''
     Класс - оболочка для работы с базой данных клиента.
