@@ -51,6 +51,5 @@ class DelUserDialog(QDialog):
             sock = self.server.names[self.selector.currentText()]
             del self.server.names[self.selector.currentText()]
             self.server.remove_client(sock)
-        # Рассылаем клиентам сообщение о необходимости обновить справочники
         self.server.service_update_lists()
         self.close()

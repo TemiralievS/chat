@@ -18,6 +18,7 @@ from client.start_dialog import UserNameDialog
 
 client_logger = logging.getLogger('client')
 
+
 @log
 def arguments_parser():
     '''Парсер аргументов коммандной строки.'''
@@ -42,19 +43,20 @@ def arguments_parser():
 
 
 if __name__ == '__main__':
-    
+
     server_address, server_port, client_name, client_passwd = arguments_parser()
-    
+
     client_app = QApplication(sys.argv)
-    
+
     start_dialog = UserNameDialog()
-    
+
     if not client_name or not client_passwd:
         client_app.exec_()
         if start_dialog.ok_pressed:
             client_name = start_dialog.client_name.text()
             client_passwd = start_dialog.client_passwd.text()
-            client_logger.debug(f'Имя пользователя = {client_name}, пароль = {client_passwd}')
+            client_logger.debug(
+                f'Имя пользователя = {client_name}, пароль = {client_passwd}')
         else:
             exit(0)
 
@@ -77,7 +79,13 @@ if __name__ == '__main__':
     database = ClientDatabase(client_name)
 
     try:
-        transport = ClientTransport(server_port, server_address, database, client_name, client_passwd, keys)
+        transport = ClientTransport(
+            server_port,
+            server_address,
+            database,
+            client_name,
+            client_passwd,
+            keys)
     except ServerError as error:
         message = QMessageBox()
         message.critical(start_dialog, 'Server error', error.text)

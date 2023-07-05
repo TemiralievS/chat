@@ -12,7 +12,7 @@ from common.vars import *
 from common.funcs import send_message, get_message
 from common.decors import login_required
 
-# Загрузка логера
+
 logger = logging.getLogger('server')
 
 
@@ -23,6 +23,7 @@ class MessageProcessor(threading.Thread):
     Работает в качестве отдельного потока.
     '''
     port = Port()
+
 
     def __init__(self, listen_address, listen_port, database):
         self.addr = listen_address
@@ -61,7 +62,7 @@ class MessageProcessor(threading.Thread):
             recv_data_lst = []
             send_data_lst = []
             err_lst = []
- 
+
             try:
                 if self.clients:
                     recv_data_lst, self.listen_sockets, self.error_sockets = select.select(
@@ -75,7 +76,8 @@ class MessageProcessor(threading.Thread):
                         self.process_client_message(
                             get_message(client_with_message), client_with_message)
                     except (OSError, json.JSONDecodeError, TypeError) as err:
-                        logger.debug(f'Getting data from client exception.', exc_info=err)
+                        logger.debug(
+                            f'Getting data from client exception.', exc_info=err)
                         self.remove_client(client_with_message)
 
     def remove_client(self, client):
@@ -95,7 +97,9 @@ class MessageProcessor(threading.Thread):
     def init_socket(self):
         '''Метод инициализатор сокета.'''
         logger.info(
-            f'Запущен сервер, порт для подключений: {self.port} , адрес с которого принимаются подключения: {self.addr}. Если адрес не указан, принимаются соединения с любых адресов.')
+            f'Запущен сервер, порт для подключений: {self.port} ,'
+            f'адрес с которого принимаются подключения: {self.addr}.'
+            f'Если адрес не указан, принимаются соединения с любых адресов.')
 
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         transport.bind((self.addr, self.port))
@@ -109,11 +113,12 @@ class MessageProcessor(threading.Thread):
         Метод отправки сообщения клиенту.
         '''
         if message[jim_waiter] in self.names and self.names[message[jim_waiter]
-        ] in self.listen_sockets:
+                                                            ] in self.listen_sockets:
             try:
                 send_message(self.names[message[jim_waiter]], message)
                 logger.info(
-                    f'Отправлено сообщение пользователю {message[jim_waiter]} от пользователя {message[jim_sender]}.')
+                    f'Отправлено сообщение пользователю {message[jim_waiter]}' 
+                    f'от пользователя {message[jim_sender]}.')
             except OSError:
                 self.remove_client(message[jim_waiter])
         elif message[jim_waiter] in self.names and self.names[message[jim_waiter]] not in self.listen_sockets:
@@ -128,11 +133,13 @@ class MessageProcessor(threading.Thread):
     def process_client_message(self, message, client):
         '''Метод отбработчик поступающих сообщений.'''
         logger.debug(f'Разбор сообщения от клиента : {message}')
-        if jim_action in message and message[jim_action] == jim_presence and jim_time in message and jim_user in message:
+        if jim_action in message and message[jim_action] == jim_presence and jim_time in message \
+                and jim_user in message:
             self.autorize_user(message, client)
 
-        elif jim_action in message and message[jim_action] == jim_message and jim_waiter in message and jim_time in message \
-                and jim_sender in message and jim_message_txt in message and self.names[message[jim_sender]] == client:
+        elif jim_action in message and message[jim_action] == jim_message and jim_waiter in message \
+            and jim_time in message and jim_sender in message \
+                and jim_message_txt in message and self.names[message[jim_sender]] == client:
             if message[jim_waiter] in self.names:
                 self.database.process_message(
                     message[jim_sender], message[jim_waiter])
@@ -157,23 +164,26 @@ class MessageProcessor(threading.Thread):
         elif jim_action in message and message[jim_action] == jim_get_cont and jim_user in message and \
                 self.names[message[jim_user]] == client:
             response = {jim_response: 202, jim_list_info: None}
-            response[jim_list_info] = self.database.get_contacts(message[jim_user])
+            response[jim_list_info] = self.database.get_contacts(
+                message[jim_user])
             try:
                 send_message(client, response)
             except OSError:
                 self.remove_client(client)
 
-        elif jim_action in message and message[jim_action] == jim_add_cont and jim_account_name in message and jim_user in message \
-                and self.names[message[jim_user]] == client:
-            self.database.add_contact(message[jim_user], message[jim_account_name])
+        elif jim_action in message and message[jim_action] == jim_add_cont \
+                and jim_account_name in message and jim_user in message and self.names[message[jim_user]] == client:
+            self.database.add_contact(
+                message[jim_user], message[jim_account_name])
             try:
                 send_message(client, {jim_response: 200})
             except OSError:
                 self.remove_client(client)
 
-        elif jim_action in message and message[jim_action] == jim_remove_cont and jim_account_name in message and jim_user in message \
-                and self.names[message[jim_user]] == client:
-            self.database.remove_contact(message[jim_user], message[jim_account_name])
+        elif jim_action in message and message[jim_action] == jim_remove_cont and \
+                jim_account_name in message and jim_user in message and self.names[message[jim_user]] == client:
+            self.database.remove_contact(
+                message[jim_user], message[jim_account_name])
             try:
                 send_message(client, {jim_response: 200})
             except OSError:
@@ -183,7 +193,7 @@ class MessageProcessor(threading.Thread):
                 and self.names[message[jim_account_name]] == client:
             response = {jim_response: 202, jim_list_info: None}
             response[jim_list_info] = [user[0]
-                                   for user in self.database.users_list()]
+                                       for user in self.database.users_list()]
             try:
                 send_message(client, response)
             except OSError:
@@ -191,7 +201,8 @@ class MessageProcessor(threading.Thread):
 
         elif jim_action in message and message[jim_action] == jim_pubkey_req and jim_account_name in message:
             response = {jim_response: 511, jim_data: None}
-            response[jim_data] = self.database.get_pubkey(message[jim_account_name])
+            response[jim_data] = self.database.get_pubkey(
+                message[jim_account_name])
 
             if response[jim_data]:
                 try:
@@ -244,11 +255,15 @@ class MessageProcessor(threading.Thread):
 
             random_str = binascii.hexlify(os.urandom(64))
             message_auth[jim_data] = random_str.decode('ascii')
-            hash = hmac.new(self.database.get_hash(message[jim_user][jim_account_name]), random_str, 'MD5')
+            hash = hmac.new(
+                self.database.get_hash(
+                    message[jim_user][jim_account_name]),
+                random_str,
+                'MD5')
             digest = hash.digest()
             logger.debug(f'Auth message = {message_auth}')
             try:
-              
+
                 send_message(sock, message_auth)
                 ans = get_message(sock)
             except OSError as err:

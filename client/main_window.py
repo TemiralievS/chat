@@ -1,11 +1,12 @@
+import json
+import logging
+import base64
+
 from PyQt5.QtWidgets import QMainWindow, qApp, QMessageBox, QApplication, QListView
 from PyQt5.QtGui import QStandardItemModel, QStandardItem, QBrush, QColor
 from PyQt5.QtCore import pyqtSlot, QEvent, Qt
 from Cryptodome.Cipher import PKCS1_OAEP
 from Cryptodome.PublicKey import RSA
-import json
-import logging
-import base64
 
 from client.main_window_conv import Ui_MainClientWindow
 from client.add_contact import AddContactDialog
@@ -26,10 +27,10 @@ class ClientMainWindow(QMainWindow):
 
     def __init__(self, database, transport, keys):
         super().__init__()
-       
+
         self.database = database
         self.transport = transport
-       
+
         self.decrypter = PKCS1_OAEP.new(keys)
 
         self.ui = Ui_MainClientWindow()
@@ -231,7 +232,6 @@ class ClientMainWindow(QMainWindow):
             logger.info(f'Успешно удалён контакт {selected}')
             self.messages.information(self, 'Успех', 'Контакт успешно удалён.')
             item.close()
-            # Если удалён активный пользователь, то деактивируем поля ввода.
             if selected == self.current_chat:
                 self.current_chat = None
                 self.set_disabled_input()
@@ -241,13 +241,10 @@ class ClientMainWindow(QMainWindow):
         Функция отправки сообщения текущему собеседнику.
         Реализует шифрование сообщения и его отправку.
         '''
-        # Текст в поле, проверяем что поле не пустое затем забирается сообщение
-        # и поле очищается
         message_text = self.ui.text_message.toPlainText()
         self.ui.text_message.clear()
         if not message_text:
             return
-        # Шифруем сообщение ключом получателя и упаковываем в base64.
         message_text_encrypted = self.encryptor.encrypt(
             message_text.encode('utf8'))
         message_text_encrypted_base64 = base64.b64encode(
@@ -283,17 +280,14 @@ class ClientMainWindow(QMainWindow):
         Запрашивает пользователя если пришло сообщение не от текущего
         собеседника. При необходимости меняет собеседника.
         '''
-        # Получаем строку байтов
         encrypted_message = base64.b64decode(message[jim_message_txt])
-        # Декодируем строку, при ошибке выдаём сообщение и завершаем функцию
         try:
             decrypted_message = self.decrypter.decrypt(encrypted_message)
         except (ValueError, TypeError):
             self.messages.warning(
                 self, 'Ошибка', 'Не удалось декодировать сообщение.')
             return
-        # Сохраняем сообщение в базу и обновляем историю сообщений или
-        # открываем новый чат.
+
         self.database.save_message(
             self.current_chat,
             'in',

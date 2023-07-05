@@ -16,6 +16,7 @@ from PyQt5.QtCore import Qt
 
 server_logger = logging.getLogger('server')
 
+
 @log
 def arguments_parser(default_port, default_address):
     '''Парсер аргументов коммандной строки.'''
@@ -47,17 +48,16 @@ def config_load():
         config.set('SETTINGS', 'Database_file', 'server_database.db3')
         return config
 
+
 @log
 def main():
-    
     config = config_load()
-
     listen_address, listen_port, gui_flag = arguments_parser(
         config['SETTINGS']['Default_port'], config['SETTINGS']['Listen_Address'])
-
     database = ServerStorage(
-        os.path.join(config['SETTINGS']['Database_path'], config['SETTINGS']['Database_file']))
-
+        os.path.join(
+            config['SETTINGS']['Database_path'],
+            config['SETTINGS']['Database_file']))
     server = MessageProcessor(listen_address, listen_port, database)
     server.daemon = True
     server.start()
@@ -78,7 +78,7 @@ def main():
         server_app.exec_()
 
         server.running = False
-        
+
 
 if __name__ == '__main__':
     main()
