@@ -3,7 +3,8 @@ import os
 import logging
 sys.path.append('../')
 
-CLIENT_FORMATTER = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(message)s')
+CLIENT_FORMATTER = logging.Formatter(
+    '%(asctime)s %(levelname)s %(filename)s %(message)s')
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(f'{PATH}/logs/client_logs', 'client.log')
@@ -25,4 +26,3 @@ if __name__ == '__main__':
     logger.error('Ошибка')
     logger.debug('Отладочная информация')
     logger.info('Информационное сообщение')
-

@@ -2,6 +2,11 @@ import dis
 
 
 class ServerCheck(type):
+    '''
+    Метакласс, проверяющий что в результирующем классе нет клиентских
+    вызовов таких как: connect. Также проверяется, что серверный
+    сокет является TCP и работает по IPv4 протоколу.
+    '''
     def __init__(self, clsname, basecls, funcdict):
         methods = []
         attrs = []
@@ -28,6 +33,11 @@ class ServerCheck(type):
 
 
 class ClientCheck(type):
+    '''
+    Метакласс, проверяющий что в результирующем классе нет серверных
+    вызовов таких как: accept, listen. Также проверяется, что сокет не
+    создаётся внутри конструктора класса.
+    '''
     def __init__(self, clsname, basecls, funcdict):
         methods = []
         for func in funcdict:
@@ -46,5 +56,6 @@ class ClientCheck(type):
             if 'get_message' in methods or 'send_message' in methods:
                 pass
             else:
-                raise TypeError('Отсутствуют вызовы функций, работающих с сокетами.')
+                raise TypeError(
+                    'Отсутствуют вызовы функций, работающих с сокетами.')
             super().__init__(clsname, basecls, funcdict)

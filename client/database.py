@@ -1,9 +1,8 @@
 import datetime
-from common.vars import *
+import os
 from sqlalchemy import create_engine, Table, Column, Integer, String, Text, MetaData, DateTime
 from sqlalchemy.orm import mapper, sessionmaker
-import os
-
+from common.vars import *
 
 
 class ClientDatabase:
@@ -16,6 +15,7 @@ class ClientDatabase:
         '''
         Класс - отображение для таблицы всех пользователей.
         '''
+
         def __init__(self, user):
             self.id = None
             self.username = user
@@ -24,6 +24,7 @@ class ClientDatabase:
         '''
         Класс - отображение для таблицы статистики переданных сообщений.
         '''
+
         def __init__(self, contact, direction, message):
             self.id = None
             self.contact = contact
@@ -35,11 +36,11 @@ class ClientDatabase:
         '''
         Класс - отображение для таблицы контактов.
         '''
+
         def __init__(self, contact):
             self.id = None
             self.name = contact
 
-    # Конструктор класса:
     def __init__(self, name):
         path = os.path.dirname(os.path.realpath(__file__))
         filename = f'client_{name}.db3'
