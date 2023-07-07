@@ -278,3 +278,47 @@
 2023-07-04 16:32:42,320 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1488, family=2, type=1, proto=0, laddr=('127.0.0.1', 51576), raddr=('127.0.0.1', 7777)>,) , {}. Вызов из модуля common.funcs
 2023-07-04 16:32:44,417 CRITICAL transport.py Потеряно соединение с сервером.
 2023-07-04 16:32:44,419 CRITICAL transport.py Потеряно соединение с сервером.
+2023-07-07 14:15:05,999 DEBUG decors.py Была вызвана функция arguments_parser c параметрами () , {}.Вызов из модуля __main__
+2023-07-07 14:16:00,365 DEBUG decors.py Была вызвана функция arguments_parser c параметрами () , {}.Вызов из модуля __main__
+2023-07-07 14:16:00,365 DEBUG decors.py Была вызвана функция arguments_parser c параметрами () , {}.Вызов из модуля __main__
+2023-07-07 14:16:00,703 INFO client.py Запущен клиент с параметрами: адрес сервера:                        127.0.0.1 , порт: 7777, имя пользователя: test1
+2023-07-07 14:16:00,719 INFO client.py Запущен клиент с параметрами: адрес сервера:                        127.0.0.1 , порт: 7777, имя пользователя: test2
+2023-07-07 14:16:03,188 DEBUG client.py Keys sucsessfully loaded.
+2023-07-07 14:16:03,188 DEBUG client.py Keys sucsessfully loaded.
+2023-07-07 14:16:03,604 INFO transport.py Попытка подключения №1
+2023-07-07 14:16:03,604 DEBUG transport.py Connection established.
+2023-07-07 14:16:03,604 DEBUG transport.py Starting auth dialog.
+2023-07-07 14:16:03,611 INFO transport.py Попытка подключения №1
+2023-07-07 14:16:03,611 DEBUG transport.py Connection established.
+2023-07-07 14:16:03,611 DEBUG transport.py Starting auth dialog.
+2023-07-07 14:16:03,642 DEBUG transport.py Passwd hash ready: b'49b70501d4d72ff5522a79cf779df86656a057282ac9ab564efb80fcba4fbc484bedcf52b3fb233d9b7b91337becc542ec3256a0269deddfedbce7275f44a781'
+2023-07-07 14:16:03,642 DEBUG transport.py Passwd hash ready: b'6c95daf460f03d00239959faac8387d157dafbe382cd684426a295cd37fbcb0e4d874cae7b07017717c8acaff862f6241d4eaeea2366f6a7b5076a8c72035cd6'
+2023-07-07 14:16:03,642 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1688724963.6422818, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+8Upuk6cQK3etXUi8xW\nxLcPBy91i0nH0Khzud9dQ9Kth40Z6VYN2fZiKchCYTFbL/iJZ4sWUMZI9ZIZEZmj\niw1ioJhXUB1DTY+MdrXqbIDZOi5NZqWze0LqYD3A5eyK4sbIQAUrTAg3gxFuujWS\nXaMjACov7XgD+osUCBI1p0A6dg08Q/nlbm1Ar8FrI61XRoOScFmlM65TZLRDQ/LK\nRw1RA5M88f7ZO5rbAUX4VVCrx8S6Ti3tB4dywWRWUaKrbh49r5IBkV/PKtK1txVr\nbGMBvKl3N9Oau+npFOUt/EWyeJCV0sh2nFpJ19t69Ps7dBCwpVXLYMFGLYzkVuk4\nLwIDAQAB\n-----END PUBLIC KEY-----'}}
+2023-07-07 14:16:03,642 DEBUG transport.py Presense message = {'action': 'presence', 'time': 1688724963.6422818, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl1dlNbgGtsDdmr8vd5If\nF9NF5rmC4rljZzy/Py6MMsyvtWABdm+kx4AEyR2gLIb5MEzd1IIyl6IqRaiOvYDX\nGJVU44VnnYl5j16jFUt3q6wmBllnB0G6GVC4tiPOvS2aEiw0UHTBiKqlynf4fRHn\nJrfbJ8eQ2h8gzubQILMTA/9ziad1MQpr7L5UAOPrCkRfbokt26fUqkajCukAADSg\npE6/Dpkr9kAr1plF/G1BToQaX7yYm0X061FWP11ijHTJDTJ2qk38X8H32AgAgNox\nq2P9rn2jX5xw7Bnh5pc52ujWV0UFcSLjKyGxnkZ57sh8kWYnuNdlxFjoZlgozl+r\nLQIDAQAB\n-----END PUBLIC KEY-----'}}
+2023-07-07 14:16:03,642 DEBUG decors.py Была вызвана функция send_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1688724963.6422818, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+8Upuk6cQK3etXUi8xW\nxLcPBy91i0nH0Khzud9dQ9Kth40Z6VYN2fZiKchCYTFbL/iJZ4sWUMZI9ZIZEZmj\niw1ioJhXUB1DTY+MdrXqbIDZOi5NZqWze0LqYD3A5eyK4sbIQAUrTAg3gxFuujWS\nXaMjACov7XgD+osUCBI1p0A6dg08Q/nlbm1Ar8FrI61XRoOScFmlM65TZLRDQ/LK\nRw1RA5M88f7ZO5rbAUX4VVCrx8S6Ti3tB4dywWRWUaKrbh49r5IBkV/PKtK1txVr\nbGMBvKl3N9Oau+npFOUt/EWyeJCV0sh2nFpJ19t69Ps7dBCwpVXLYMFGLYzkVuk4\nLwIDAQAB\n-----END PUBLIC KEY-----'}}) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:03,642 DEBUG decors.py Была вызвана функция send_message c параметрами (<socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 59529), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1688724963.6422818, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl1dlNbgGtsDdmr8vd5If\nF9NF5rmC4rljZzy/Py6MMsyvtWABdm+kx4AEyR2gLIb5MEzd1IIyl6IqRaiOvYDX\nGJVU44VnnYl5j16jFUt3q6wmBllnB0G6GVC4tiPOvS2aEiw0UHTBiKqlynf4fRHn\nJrfbJ8eQ2h8gzubQILMTA/9ziad1MQpr7L5UAOPrCkRfbokt26fUqkajCukAADSg\npE6/Dpkr9kAr1plF/G1BToQaX7yYm0X061FWP11ijHTJDTJ2qk38X8H32AgAgNox\nq2P9rn2jX5xw7Bnh5pc52ujWV0UFcSLjKyGxnkZ57sh8kWYnuNdlxFjoZlgozl+r\nLQIDAQAB\n-----END PUBLIC KEY-----'}}) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:03,642 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:03,642 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 59529), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:04,163 DEBUG transport.py Server response = {'response': 511, 'bin': '8ecbaf99b94de6fb79cf7ec46268d7abd19bafcb7bf7f0a848f44c12a2a2c83930469dd132694092acec7ef0ec9eb2fb9dbbd72098419abac74c6b7b4a517571'}.
+2023-07-07 14:16:04,164 DEBUG decors.py Была вызвана функция send_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>, {'response': 511, 'bin': 'iJ+k9ux/fEsneDT3/+nVSg==\n'}) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:04,164 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:04,166 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2023-07-07 14:16:04,166 DEBUG transport.py Запрос списка известных пользователей test1
+2023-07-07 14:16:04,167 DEBUG decors.py Была вызвана функция send_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1688724964.1665807, 'account_name': 'test1'}) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:04,168 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:05,175 DEBUG transport.py Server response = {'response': 511, 'bin': 'c51997efe3eff63f3afb6ca5db8310728a4b933f651896685036294b55efe3e5cb9060c4f9fce0165341d520116eb53167f48d00f1a921fe40ace740c3ac3636'}.
+2023-07-07 14:16:05,191 DEBUG decors.py Была вызвана функция send_message c параметрами (<socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 59529), raddr=('127.0.0.1', 7777)>, {'response': 511, 'bin': '0kOlru8bkyKJWetkxZs6yw==\n'}) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:05,191 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 59529), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:05,191 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2023-07-07 14:16:05,191 DEBUG transport.py Запрос списка известных пользователей test2
+2023-07-07 14:16:05,191 DEBUG decors.py Была вызвана функция send_message c параметрами (<socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 59529), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1688724965.1915183, 'account_name': 'test2'}) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:05,191 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 59529), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:09,171 ERROR transport.py Timeout соединения при обновлении списков пользователей.
+2023-07-07 14:16:09,171 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2023-07-07 14:16:10,198 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:10,214 ERROR transport.py Timeout соединения при обновлении списков пользователей.
+2023-07-07 14:16:10,214 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2023-07-07 14:16:11,253 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 59529), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:11,253 CRITICAL transport.py Потеряно соединение с сервером.
+2023-07-07 14:16:11,707 DEBUG decors.py Была вызвана функция get_message c параметрами (<socket.socket fd=1256, family=2, type=1, proto=0, laddr=('127.0.0.1', 59528), raddr=('127.0.0.1', 7777)>,) , {}.Вызов из модуля common.funcs
+2023-07-07 14:16:11,707 CRITICAL transport.py Потеряно соединение с сервером.
